@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: langchain-mcp-adapters
-  version: "0.2.0"
+  version: "0.2.1"
   python_min: '3.10'
 
 package:
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langchain_mcp_adapters-${{ version }}.tar.gz
-  sha256: 9a878f7e2fe2c3a8a33e3eda41a7d46e899470f5f5e6a5c9f8a79e409c487236
+  sha256: 58e64c44e8df29ca7eb3b656cf8c9931ef64386534d7ca261982e3bdc63f3176
 
 build:
   number: 0
