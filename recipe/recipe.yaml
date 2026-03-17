@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: langchain-mcp-adapters
-  version: "0.2.1"
+  version: 0.2.2
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/langchain_mcp_adapters-${{ version }}.tar.gz
-  sha256: 58e64c44e8df29ca7eb3b656cf8c9931ef64386534d7ca261982e3bdc63f3176
+  sha256: 12d39e91ae4389c54b61b221094e53850b6e152934d8bc10c80665d600e76530
 
 build:
   number: 0
@@ -28,7 +28,7 @@ requirements:
     - langchain-core >=1.0.0,<2.0.0
     - mcp >=1.9.2
     - typing_extensions >=4.14.0
-
+    - pydantic
 tests:
   - python:
       imports:
